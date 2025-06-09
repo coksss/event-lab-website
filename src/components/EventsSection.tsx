@@ -78,13 +78,16 @@ const getEventTypeLabel = (type: string) => {
 
 const EventsSection = () => {
   return (
-    <section className="py-20 bg-background">
+    <section
+      id="events"
+      className="py-20 bg-gradient-to-br from-white via-purple-50 to-purple-100"
+    >
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6 text-foreground">
+          <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6 bg-gradient-purple bg-clip-text text-transparent">
             Ближайшие события
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-purple-800 max-w-2xl mx-auto">
             Присоединяйтесь к нашим увлекательным мероприятиям и проведите время
             незабываемо
           </p>
@@ -94,17 +97,18 @@ const EventsSection = () => {
           {events.map((event, index) => (
             <Card
               key={event.id}
-              className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-scale-in"
+              className="overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 animate-scale-in bg-white/80 backdrop-blur-sm border-2 border-purple-200 hover:border-purple-400 group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-56 overflow-hidden">
                 <img
                   src={event.image}
                   alt={event.title}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute top-4 left-4">
-                  <Badge className="bg-primary text-primary-foreground">
+                  <Badge className="bg-gradient-purple text-white backdrop-blur-sm shadow-lg">
                     <Icon
                       name={getEventIcon(event.type)}
                       size={16}
@@ -116,32 +120,37 @@ const EventsSection = () => {
                 <div className="absolute top-4 right-4">
                   <Badge
                     variant="secondary"
-                    className="bg-white/90 text-purple-700"
+                    className="bg-white/95 text-purple-700 font-bold shadow-lg"
                   >
                     {event.price}
                   </Badge>
                 </div>
+                <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div className="text-white text-sm font-medium">
+                    Успей забронировать место!
+                  </div>
+                </div>
               </div>
 
-              <CardHeader>
-                <CardTitle className="text-xl font-montserrat">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-xl font-montserrat text-purple-900">
                   {event.title}
                 </CardTitle>
               </CardHeader>
 
-              <CardContent className="space-y-4">
-                <div className="flex items-center text-muted-foreground">
+              <CardContent className="space-y-4 pt-0">
+                <div className="flex items-center text-purple-700">
                   <Icon name="Calendar" size={18} className="mr-2" />
-                  <span>
+                  <span className="font-medium">
                     {event.date} в {event.time}
                   </span>
                 </div>
-                <div className="flex items-center text-muted-foreground">
+                <div className="flex items-center text-purple-700">
                   <Icon name="MapPin" size={18} className="mr-2" />
                   <span>{event.venue}</span>
                 </div>
 
-                <Button className="w-full bg-gradient-purple hover:opacity-90 transition-opacity">
+                <Button className="w-full bg-gradient-purple hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl text-white font-semibold py-3">
                   <Icon name="Ticket" className="mr-2" />
                   Купить билет
                 </Button>
@@ -154,7 +163,7 @@ const EventsSection = () => {
           <Button
             variant="outline"
             size="lg"
-            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+            className="border-2 border-purple-600 text-purple-600 hover:bg-gradient-purple hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl px-8 py-4"
           >
             <Icon name="Calendar" className="mr-2" />
             Посмотреть все события

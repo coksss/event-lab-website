@@ -3,7 +3,10 @@ import Icon from "@/components/ui/icon";
 
 const AboutSection = () => {
   return (
-    <section className="py-20 bg-gradient-purple-light">
+    <section
+      id="about"
+      className="py-20 bg-gradient-to-br from-purple-200 via-purple-100 to-white"
+    >
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">

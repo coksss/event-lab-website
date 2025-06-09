@@ -4,78 +4,97 @@ import Icon from "@/components/ui/icon";
 
 const ContactSection = () => {
   return (
-    <section className="py-20 bg-background">
+    <section
+      id="contact"
+      className="py-20 bg-gradient-to-br from-purple-800 via-purple-600 to-purple-400"
+    >
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6 text-foreground">
+          <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6 text-white">
             Присоединяйтесь к нам
           </h2>
-          <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
+          <p className="text-lg text-purple-200 mb-12 max-w-2xl mx-auto">
             Следите за нашими новостями и не пропускайте самые интересные
             события
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-white/90 backdrop-blur-sm">
               <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-gradient-purple rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <Icon name="Instagram" size={24} className="text-white" />
                 </div>
-                <h3 className="font-semibold mb-2">Instagram</h3>
-                <p className="text-sm text-muted-foreground mb-4">@eventylab</p>
-                <Button variant="outline" size="sm" className="w-full">
+                <h3 className="font-semibold mb-2 text-purple-900">
+                  Instagram
+                </h3>
+                <p className="text-sm text-purple-700 mb-4">@eventylab</p>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="w-full border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white"
+                >
                   Подписаться
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-white/90 backdrop-blur-sm">
               <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-gradient-purple rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <Icon name="Send" size={24} className="text-white" />
                 </div>
-                <h3 className="font-semibold mb-2">Telegram</h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  @eventylab_bot
-                </p>
-                <Button variant="outline" size="sm" className="w-full">
+                <h3 className="font-semibold mb-2 text-purple-900">Telegram</h3>
+                <p className="text-sm text-purple-700 mb-4">@eventylab_bot</p>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="w-full border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white"
+                >
                   Написать
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-white/90 backdrop-blur-sm">
               <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-gradient-purple rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <Icon name="Phone" size={24} className="text-white" />
                 </div>
-                <h3 className="font-semibold mb-2">Телефон</h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <h3 className="font-semibold mb-2 text-purple-900">Телефон</h3>
+                <p className="text-sm text-purple-700 mb-4">
                   +7 (999) 123-45-67
                 </p>
-                <Button variant="outline" size="sm" className="w-full">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="w-full border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white"
+                >
                   Позвонить
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-white/90 backdrop-blur-sm">
               <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-purple-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-gradient-purple rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <Icon name="Mail" size={24} className="text-white" />
                 </div>
-                <h3 className="font-semibold mb-2">Email</h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <h3 className="font-semibold mb-2 text-purple-900">Email</h3>
+                <p className="text-sm text-purple-700 mb-4">
                   info@eventylab.ru
                 </p>
-                <Button variant="outline" size="sm" className="w-full">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="w-full border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white"
+                >
                   Написать
                 </Button>
               </CardContent>
             </Card>
           </div>
 
-          <Card className="bg-gradient-purple text-white">
+          <Card className="bg-white/20 backdrop-blur-md text-white border-white/30">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold font-montserrat mb-4">
                 Хотите провести мероприятие?
@@ -86,7 +105,7 @@ const ContactSection = () => {
               </p>
               <Button
                 size="lg"
-                className="bg-white text-purple-700 hover:bg-purple-50"
+                className="bg-white text-purple-700 hover:bg-purple-50 shadow-xl hover:shadow-2xl transition-all duration-300"
               >
                 <Icon name="MessageCircle" className="mr-2" />
                 Связаться с нами
