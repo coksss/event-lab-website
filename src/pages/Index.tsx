@@ -162,7 +162,7 @@ const Index = () => {
       </section>
 
       {/* Services Preview */}
-      <section className="py-24 bg-gradient-purple-dark-blue-light">
+      <section className="py-24 bg-gradient-to-br from-purple-50 via-indigo-50 to-blue-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-5xl md:text-6xl font-bold font-montserrat mb-8 bg-gradient-purple-dark-blue bg-clip-text text-transparent">
