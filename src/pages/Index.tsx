@@ -57,7 +57,7 @@ const Index = () => {
             </div>
 
             <h1 className="text-7xl md:text-9xl font-bold font-montserrat mb-8 leading-tight bg-gradient-to-r from-white via-indigo-200 to-indigo-100 bg-clip-text text-transparent">
-              EventyLab
+              EVENTYLAB
             </h1>
 
             <p className="text-3xl md:text-4xl font-open-sans mb-6 text-indigo-100 font-semibold">
@@ -220,7 +220,7 @@ const Index = () => {
           </h2>
           <p className="text-2xl text-purple-200 mb-12 max-w-3xl mx-auto">
             Присоединяйтесь к тысячам людей, которые уже открыли для себя мир
-            EventyLab
+            EVENTYLAB
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link to="/events">

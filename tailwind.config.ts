@@ -95,11 +95,11 @@ export default {
       },
       backgroundImage: {
         "gradient-purple-dark-blue":
-          "linear-gradient(135deg, #8b5cf6 0%, #6366f1 25%, #4f46e5 50%, #1e293b 75%, #0f172a 100%)",
+          "linear-gradient(135deg, #8b5cf6 0%, #7c3aed 25%, #6d28d9 50%, #5b21b6 75%, #4c1d95 100%)",
         "gradient-purple-dark-blue-light":
-          "linear-gradient(135deg, #a78bfa 0%, #818cf8 25%, #6366f1 50%, #475569 75%, #334155 100%)",
+          "linear-gradient(135deg, #a78bfa 0%, #8b5cf6 25%, #7c3aed 50%, #6d28d9 75%, #5b21b6 100%)",
         "gradient-dark-blue":
-          "linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #030712 100%)",
+          "linear-gradient(135deg, #5b21b6 0%, #4c1d95 50%, #3b0764 100%)",
         "gradient-purple-indigo":
           "linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)",
       },

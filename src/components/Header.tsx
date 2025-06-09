@@ -32,7 +32,7 @@ const Header = () => {
               <Icon name="Sparkles" size={28} className="text-white" />
             </div>
             <h1 className="text-2xl font-bold font-montserrat bg-gradient-purple-dark-blue bg-clip-text text-transparent">
-              EventyLab
+              EVENTYLAB
             </h1>
           </Link>
 
