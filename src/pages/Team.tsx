@@ -95,25 +95,33 @@ const Team = () => {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-purple-dark-blue relative overflow-hidden">
       <Header />
 
-      <div className="pt-16">
-        {/* Hero Section */}
-        <section className="py-20 bg-gradient-purple-dark-blue relative overflow-hidden">
-          {/* Animated Background Elements */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-20 left-10 w-32 h-32 bg-purple-400/30 rounded-full blur-3xl animate-pulse"></div>
-            <div
-              className="absolute bottom-20 right-10 w-48 h-48 bg-purple-300/20 rounded-full blur-3xl animate-pulse"
-              style={{ animationDelay: "1s" }}
-            ></div>
-            <div
-              className="absolute top-1/2 left-1/2 w-64 h-64 bg-purple-200/10 rounded-full blur-3xl animate-pulse"
-              style={{ animationDelay: "2s" }}
-            ></div>
-          </div>
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-purple-400/30 rounded-full blur-3xl animate-pulse"></div>
+        <div
+          className="absolute bottom-20 right-10 w-48 h-48 bg-purple-300/20 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: "1s" }}
+        ></div>
+        <div
+          className="absolute top-1/2 left-1/2 w-64 h-64 bg-purple-200/10 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: "2s" }}
+        ></div>
+      </div>
 
+      {/* Background Music */}
+      <audio ref={audioRef} loop>
+        <source
+          src="https://www.soundjay.com/misc/sounds/cat-meow-14.wav"
+          type="audio/wav"
+        />
+      </audio>
+
+      <div className="pt-20 relative z-10">
+        {/* Hero Section */}
+        <section className="py-20 relative overflow-hidden">
           <div className="container mx-auto px-4 text-center text-white relative z-10">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-5xl md:text-6xl font-bold font-montserrat mb-6 animate-fade-in">
