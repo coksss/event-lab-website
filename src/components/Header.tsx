@@ -14,7 +14,6 @@ const Header = () => {
     { path: "/gallery", label: "Галерея" },
     { path: "/team", label: "Команда" },
     { path: "/reviews", label: "Отзывы" },
-    { path: "/about", label: "О нас" },
   ];
 
   const isActive = (path: string) => {

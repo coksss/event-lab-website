@@ -64,6 +64,18 @@ export default {
           800: "#5b21b6",
           900: "#4c1d95",
         },
+        cyan: {
+          50: "#ecfeff",
+          100: "#cffafe",
+          200: "#a5f3fc",
+          300: "#67e8f9",
+          400: "#22d3ee",
+          500: "#06b6d4",
+          600: "#0891b2",
+          700: "#0e7490",
+          800: "#155e75",
+          900: "#164e63",
+        },
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
@@ -75,9 +87,11 @@ export default {
         "gradient-purple-light":
           "linear-gradient(135deg, #c084fc 0%, #8b5cf6 100%)",
         "gradient-bright":
-          "linear-gradient(135deg, #6d28d9, #7c3aed, #8b5cf6, #a855f7)",
+          "linear-gradient(135deg, #06b6d4, #0891b2, #22d3ee, #67e8f9)",
         "gradient-vivid":
           "linear-gradient(135deg, #5b21b6, #6d28d9, #7c3aed, #8b5cf6)",
+        "gradient-cyan":
+          "linear-gradient(135deg, #06b6d4 0%, #0891b2 50%, #0e7490 100%)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -100,6 +114,18 @@ export default {
         "scale-in": {
           "0%": { transform: "scale(0.95)", opacity: "0" },
           "100%": { transform: "scale(1)", opacity: "1" },
+        },
+        cyan: {
+          50: "#ecfeff",
+          100: "#cffafe",
+          200: "#a5f3fc",
+          300: "#67e8f9",
+          400: "#22d3ee",
+          500: "#06b6d4",
+          600: "#0891b2",
+          700: "#0e7490",
+          800: "#155e75",
+          900: "#164e63",
         },
       },
       animation: {
