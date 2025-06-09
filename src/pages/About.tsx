@@ -63,6 +63,10 @@ const About = () => {
               className="absolute bottom-20 right-10 w-48 h-48 bg-purple-300/20 rounded-full blur-3xl animate-pulse"
               style={{ animationDelay: "1s" }}
             ></div>
+            <div
+              className="absolute top-1/2 left-1/2 w-64 h-64 bg-purple-200/10 rounded-full blur-3xl animate-pulse"
+              style={{ animationDelay: "2s" }}
+            ></div>
           </div>
 
           <div className="container mx-auto px-4 relative z-10">
