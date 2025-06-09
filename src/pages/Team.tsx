@@ -206,9 +206,9 @@ const Team = () => {
                       <img
                         src={cat.image}
                         alt={cat.name}
-                        className={`w-32 h-32 rounded-full mx-auto object-cover border-4 border-purple-200 group-hover:border-cyan-400 transition-all duration-300 ${
+                        className={`w-32 h-32 rounded-full mx-auto object-cover border-4 border-purple-200 group-hover:border-purple-400 transition-all duration-300 ${
                           selectedCat === index
-                            ? "scale-110 border-cyan-400"
+                            ? "scale-110 border-purple-400"
                             : ""
                         }`}
                       />
@@ -222,7 +222,7 @@ const Team = () => {
                       )}
                     </div>
 
-                    <h3 className="text-2xl font-bold text-purple-900 mb-2 group-hover:text-cyan-700 transition-colors">
+                    <h3 className="text-2xl font-bold text-purple-900 mb-2 group-hover:text-purple-700 transition-colors">
                       {cat.name}
                     </h3>
 
@@ -237,10 +237,10 @@ const Team = () => {
                     {selectedCat === index && (
                       <div className="space-y-4 animate-fade-in">
                         <div className="bg-gradient-to-r from-cyan-50 to-blue-50 rounded-xl p-4">
-                          <p className="text-cyan-700 font-medium text-sm mb-2">
+                          <p className="text-purple-700 font-medium text-sm mb-2">
                             💭 Девиз: "{cat.motto}"
                           </p>
-                          <p className="text-cyan-600 text-sm">
+                          <p className="text-purple-600 text-sm">
                             🎵 Любимая музыка: {cat.favoriteMusic}
                           </p>
                         </div>
@@ -257,7 +257,7 @@ const Team = () => {
                         {cat.skills.map((skill, skillIndex) => (
                           <span
                             key={skillIndex}
-                            className="px-3 py-1 bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-xs rounded-full shadow-md hover:shadow-lg transition-shadow"
+                            className="px-3 py-1 bg-gradient-to-r from-purple-500 to-purple-600 text-white text-xs rounded-full shadow-md hover:shadow-lg transition-shadow"
                           >
                             {skill}
                           </span>
@@ -284,7 +284,7 @@ const Team = () => {
                   <Icon
                     name="Fish"
                     size={48}
-                    className="text-cyan-300 mx-auto mb-4"
+                    className="text-purple-300 mx-auto mb-4"
                   />
                   <h3 className="text-xl font-bold text-white mb-2">
                     Любимая еда
@@ -298,7 +298,7 @@ const Team = () => {
                   <Icon
                     name="Moon"
                     size={48}
-                    className="text-cyan-300 mx-auto mb-4"
+                    className="text-purple-300 mx-auto mb-4"
                   />
                   <h3 className="text-xl font-bold text-white mb-2">
                     Режим работы
@@ -312,7 +312,7 @@ const Team = () => {
                   <Icon
                     name="Trophy"
                     size={48}
-                    className="text-cyan-300 mx-auto mb-4"
+                    className="text-purple-300 mx-auto mb-4"
                   />
                   <h3 className="text-xl font-bold text-white mb-2">
                     Достижения
@@ -332,7 +332,7 @@ const Team = () => {
             <p className="text-white text-lg mb-4">
               🎉 Наши коты готовы сделать ваш праздник незабываемым!
             </p>
-            <Button className="bg-white text-cyan-600 hover:bg-cyan-50 font-bold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+            <Button className="bg-white text-purple-600 hover:bg-purple-50 font-bold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
               <Icon name="Phone" className="mr-2" size={18} />
               Связаться с командой
             </Button>

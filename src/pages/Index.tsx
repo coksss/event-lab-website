@@ -109,7 +109,7 @@ const Index = () => {
             <h2 className="text-5xl md:text-6xl font-bold font-montserrat mb-8 bg-gradient-purple-dark-blue bg-clip-text text-transparent">
               Ближайшие события
             </h2>
-            <p className="text-xl text-darkblue-800 max-w-3xl mx-auto">
+            <p className="text-xl text-purple-800 max-w-3xl mx-auto">
               Не упустите возможность провести время незабываемо
             </p>
           </div>
@@ -118,7 +118,7 @@ const Index = () => {
             {featuredEvents.map((event, index) => (
               <Card
                 key={index}
-                className="overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 bg-white/80 backdrop-blur-sm border-2 border-indigo-200 hover:border-indigo-400 group"
+                className="overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 bg-white/80 backdrop-blur-sm border-2 border-purple-200 hover:border-purple-400 group"
               >
                 <div className="relative h-64 overflow-hidden">
                   <img
@@ -126,18 +126,18 @@ const Index = () => {
                     alt={event.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-darkblue-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-purple-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute top-4 right-4">
-                    <Badge className="bg-white/95 text-indigo-700 font-bold shadow-lg">
+                    <Badge className="bg-white/95 text-purple-700 font-bold shadow-lg">
                       {event.price}
                     </Badge>
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-darkblue-900 mb-2">
+                  <h3 className="text-xl font-bold text-purple-900 mb-2">
                     {event.title}
                   </h3>
-                  <p className="text-darkblue-700 mb-4">{event.date}</p>
+                  <p className="text-purple-700 mb-4">{event.date}</p>
                   <Button className="w-full bg-gradient-purple-dark-blue hover:opacity-90 text-white">
                     <Icon name="Ticket" className="mr-2" />
                     Подробнее
@@ -174,7 +174,7 @@ const Index = () => {
             {services.map((service, index) => (
               <Card
                 key={index}
-                className="bg-white/80 backdrop-blur-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border-2 border-indigo-200 hover:border-indigo-400"
+                className="bg-white/80 backdrop-blur-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border-2 border-purple-200 hover:border-purple-400"
               >
                 <CardContent className="p-8 text-center">
                   <div className="w-20 h-20 bg-gradient-purple-dark-blue rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
@@ -184,10 +184,10 @@ const Index = () => {
                       className="text-white"
                     />
                   </div>
-                  <h3 className="text-2xl font-bold text-darkblue-900 mb-4">
+                  <h3 className="text-2xl font-bold text-purple-900 mb-4">
                     {service.title}
                   </h3>
-                  <p className="text-2xl font-bold text-indigo-600 mb-6">
+                  <p className="text-2xl font-bold text-purple-600 mb-6">
                     {service.price}
                   </p>
                   <Button className="bg-gradient-purple-dark-blue hover:opacity-90 text-white w-full">
@@ -226,7 +226,7 @@ const Index = () => {
             <Link to="/events">
               <Button
                 size="lg"
-                className="text-darkblue-700 hover:bg-gray-50 px-10 py-5 text-xl font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                className="text-purple-700 hover:bg-gray-50 px-10 py-5 text-xl font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
                 style={{ backgroundColor: "#FFFDFB" }}
               >
                 <Icon name="Ticket" className="mr-2" size={20} />
@@ -237,7 +237,7 @@ const Index = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-2 border-white text-white hover:text-darkblue-700 px-10 py-5 text-xl font-semibold backdrop-blur-sm"
+                className="border-2 border-white text-white hover:text-purple-700 px-10 py-5 text-xl font-semibold backdrop-blur-sm"
                 style={{ "--tw-bg-opacity": "1" } as any}
                 onMouseEnter={(e) =>
                   (e.currentTarget.style.backgroundColor = "#FFFDFB")

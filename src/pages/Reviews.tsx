@@ -97,7 +97,7 @@ const Reviews = () => {
                 Истории успеха и радости от наших участников
               </p>
               <div className="inline-flex items-center px-8 py-4 bg-white/20 backdrop-blur-sm rounded-full text-purple-200 text-lg">
-                <Icon name="Star" size={24} className="mr-3 text-yellow-300" />
+                <Icon name="Star" size={24} className="mr-3 text-purple-300" />
                 4.9/5 средняя оценка наших мероприятий
               </div>
             </div>
@@ -194,7 +194,7 @@ const Reviews = () => {
                           key={i}
                           name="Star"
                           size={20}
-                          className="text-yellow-400 fill-current"
+                          className="text-purple-400 fill-current"
                         />
                       ))}
                     </div>
