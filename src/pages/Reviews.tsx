@@ -87,7 +87,7 @@ const Reviews = () => {
 
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="py-24 bg-gradient-to-br from-purple-900 via-purple-700 to-purple-500">
+        <section className="py-24 from-purple-900 via-purple-700 to-purple-500 bg-fuchsia-600">
           <div className="container mx-auto px-4 text-center text-white">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-6xl md:text-7xl font-bold font-montserrat mb-8">

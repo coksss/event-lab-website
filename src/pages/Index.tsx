@@ -51,20 +51,20 @@ const Index = () => {
         <div className="relative z-10 container mx-auto px-4 text-center text-white animate-fade-in">
           <div className="max-w-5xl mx-auto">
             <div className="mb-8">
-              <Badge className="bg-white/20 text-indigo-200 text-lg px-6 py-3 backdrop-blur-sm">
+              <Badge className="bg-white/20 text-purple-200 text-lg px-6 py-3 backdrop-blur-sm">
                 🎉 Более 200 успешных мероприятий
               </Badge>
             </div>
 
-            <h1 className="text-7xl md:text-9xl font-bold font-montserrat mb-8 leading-tight bg-gradient-to-r from-white via-indigo-200 to-indigo-100 bg-clip-text text-transparent">
+            <h1 className="text-7xl md:text-9xl font-bold font-montserrat mb-8 leading-tight bg-gradient-to-r from-white via-purple-200 to-purple-100 bg-clip-text text-transparent">
               EVENTYLAB
             </h1>
 
-            <p className="text-3xl md:text-4xl font-open-sans mb-6 text-indigo-100 font-semibold">
+            <p className="text-3xl md:text-4xl font-open-sans mb-6 text-purple-100 font-semibold">
               Музыкальное лото • Мафия • Квизы
             </p>
 
-            <p className="text-xl md:text-2xl mb-12 text-indigo-200 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl mb-12 text-purple-200 max-w-4xl mx-auto leading-relaxed">
               Создаем незабываемые развлекательные мероприятия в лучших
               заведениях города. Присоединяйтесь к тысячам довольных участников!
             </p>
@@ -73,7 +73,7 @@ const Index = () => {
               <Link to="/events">
                 <Button
                   size="lg"
-                  className="bg-white text-indigo-700 hover:bg-gray-50 px-12 py-6 text-xl font-semibold animate-scale-in shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
+                  className="bg-white text-purple-700 hover:bg-gray-50 px-12 py-6 text-xl font-semibold animate-scale-in shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
                   style={{ backgroundColor: "#FFFDFB" }}
                 >
                   <Icon name="Calendar" className="mr-3" size={24} />
@@ -85,7 +85,7 @@ const Index = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-2 border-white text-white hover:bg-white hover:text-indigo-700 px-12 py-6 text-xl font-semibold animate-scale-in shadow-2xl backdrop-blur-sm"
+                  className="border-2 border-white text-white hover:bg-white hover:text-purple-700 px-12 py-6 text-xl font-semibold animate-scale-in shadow-2xl backdrop-blur-sm"
                   style={{ animationDelay: "0.2s" }}
                 >
                   <Icon name="Users" className="mr-3" size={24} />О компании
