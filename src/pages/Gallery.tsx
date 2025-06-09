@@ -101,7 +101,7 @@ const Gallery = () => {
 
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="py-24 bg-gradient-to-br from-purple-900 via-purple-700 to-purple-500">
+        <section className="py-24 bg-gradient-to-br from-purple-950 via-purple-900 to-purple-700">
           <div className="container mx-auto px-4 text-center text-white">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-6xl md:text-7xl font-bold font-montserrat mb-8">
@@ -118,7 +118,7 @@ const Gallery = () => {
         </section>
 
         {/* Filter Section */}
-        <section className="py-12 bg-gradient-to-br from-white via-purple-50 to-purple-100">
+        <section className="py-12 bg-gradient-to-br from-white via-purple-100 to-purple-200">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center gap-4 mb-12">
               {categories.map((category) => (
@@ -129,7 +129,7 @@ const Gallery = () => {
                   className={`px-6 py-3 transition-all duration-300 ${
                     filter === category.key
                       ? "bg-gradient-purple text-white shadow-lg scale-105"
-                      : "border-purple-300 text-purple-700 hover:bg-purple-50"
+                      : "border-purple-400 text-purple-800 hover:bg-purple-100"
                   }`}
                 >
                   <Icon
@@ -145,13 +145,13 @@ const Gallery = () => {
         </section>
 
         {/* Gallery Grid */}
-        <section className="py-12 bg-gradient-to-br from-purple-50 to-white">
+        <section className="py-12 bg-gradient-to-br from-purple-100 to-white">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
               {filteredItems.map((item, index) => (
                 <Card
                   key={item.id}
-                  className="overflow-hidden bg-white/80 backdrop-blur-sm border-2 border-purple-200 hover:border-purple-400 hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 animate-scale-in group"
+                  className="overflow-hidden bg-white/80 backdrop-blur-sm border-2 border-purple-300 hover:border-purple-500 hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 animate-scale-in group"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="relative overflow-hidden">
@@ -163,7 +163,7 @@ const Gallery = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                     <div className="absolute top-4 left-4">
-                      <Badge className="bg-white/90 text-purple-900 backdrop-blur-sm">
+                      <Badge className="bg-white/90 text-purple-950 backdrop-blur-sm">
                         {getCategoryLabel(item.category)}
                       </Badge>
                     </div>
@@ -182,7 +182,7 @@ const Gallery = () => {
         </section>
 
         {/* Stats Section */}
-        <section className="py-20 bg-gradient-to-r from-purple-600 to-purple-800">
+        <section className="py-20 bg-gradient-to-r from-purple-800 to-purple-950">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">

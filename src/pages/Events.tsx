@@ -75,7 +75,7 @@ const Events = () => {
 
       <div className="pt-16">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-purple-900 via-purple-700 to-purple-500">
+        <section className="py-20 bg-gradient-to-br from-purple-950 via-purple-900 to-purple-700">
           <div className="container mx-auto px-4 text-center text-white">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-5xl md:text-6xl font-bold font-montserrat mb-6">
@@ -92,7 +92,7 @@ const Events = () => {
         </section>
 
         {/* Events Grid */}
-        <section className="py-20 bg-gradient-to-br from-purple-50 to-white">
+        <section className="py-20 bg-gradient-to-br from-purple-100 to-white">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {events.map((event) => (
@@ -119,26 +119,26 @@ const Events = () => {
                   </div>
 
                   <CardHeader>
-                    <CardTitle className="text-purple-900">
+                    <CardTitle className="text-purple-950">
                       {event.title}
                     </CardTitle>
                   </CardHeader>
 
                   <CardContent>
-                    <p className="text-purple-700 mb-4">{event.description}</p>
+                    <p className="text-purple-800 mb-4">{event.description}</p>
 
                     <div className="space-y-2 mb-6">
-                      <div className="flex items-center text-purple-600">
+                      <div className="flex items-center text-purple-700">
                         <Icon name="Calendar" size={16} className="mr-2" />
                         <span>
                           {event.date} в {event.time}
                         </span>
                       </div>
-                      <div className="flex items-center text-purple-600">
+                      <div className="flex items-center text-purple-700">
                         <Icon name="MapPin" size={16} className="mr-2" />
                         <span>{event.venue}</span>
                       </div>
-                      <div className="flex items-center text-purple-600">
+                      <div className="flex items-center text-purple-700">
                         <Icon name="Users" size={16} className="mr-2" />
                         <span>Осталось {event.spots} мест</span>
                       </div>
@@ -156,7 +156,7 @@ const Events = () => {
         </section>
 
         {/* Call to Action */}
-        <section className="py-20 bg-gradient-to-r from-purple-600 to-purple-800">
+        <section className="py-20 bg-gradient-to-r from-purple-800 to-purple-950">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Не нашли подходящее мероприятие?

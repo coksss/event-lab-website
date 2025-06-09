@@ -104,7 +104,7 @@ const Services = () => {
 
       <div className="pt-16">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-purple-900 via-purple-700 to-purple-500">
+        <section className="py-20 bg-gradient-to-br from-purple-950 via-purple-900 to-purple-700">
           <div className="container mx-auto px-4 text-center text-white">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-5xl md:text-6xl font-bold font-montserrat mb-6">
@@ -122,7 +122,7 @@ const Services = () => {
         </section>
 
         {/* Services Grid */}
-        <section className="py-20 bg-gradient-to-br from-white via-purple-50 to-purple-100">
+        <section className="py-20 bg-gradient-to-br from-white via-purple-100 to-purple-200">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {services.map((service) => (
@@ -152,23 +152,23 @@ const Services = () => {
                           className="text-white"
                         />
                       </div>
-                      <h3 className="text-xl font-bold text-purple-900 mb-2">
+                      <h3 className="text-xl font-bold text-purple-950 mb-2">
                         {service.title}
                       </h3>
-                      <p className="text-purple-700 mb-4">
+                      <p className="text-purple-800 mb-4">
                         {service.description}
                       </p>
                     </div>
 
                     <div className="flex-grow">
-                      <h4 className="font-semibold text-purple-800 mb-3">
+                      <h4 className="font-semibold text-purple-900 mb-3">
                         Что включено:
                       </h4>
                       <ul className="space-y-2 mb-6">
                         {service.features.map((feature, index) => (
                           <li
                             key={index}
-                            className="flex items-center text-purple-600 text-sm"
+                            className="flex items-center text-purple-700 text-sm"
                           >
                             <Icon
                               name="Check"
@@ -193,13 +193,13 @@ const Services = () => {
         </section>
 
         {/* Process Section */}
-        <section className="py-20 bg-gradient-to-br from-purple-100 to-purple-200">
+        <section className="py-20 bg-gradient-to-br from-purple-200 to-purple-300">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6 text-purple-900">
+              <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6 text-purple-950">
                 Как мы работаем
               </h2>
-              <p className="text-lg text-purple-700 max-w-2xl mx-auto">
+              <p className="text-lg text-purple-800 max-w-2xl mx-auto">
                 Простой процесс от идеи до проведения мероприятия
               </p>
             </div>
@@ -236,7 +236,7 @@ const Services = () => {
                   className="bg-white/80 backdrop-blur-sm text-center hover:shadow-lg transition-all duration-300"
                 >
                   <CardContent className="p-6">
-                    <div className="text-3xl font-bold text-purple-300 mb-4">
+                    <div className="text-3xl font-bold text-purple-400 mb-4">
                       {item.step}
                     </div>
                     <div className="w-12 h-12 bg-gradient-purple rounded-full flex items-center justify-center mx-auto mb-4">
@@ -246,10 +246,10 @@ const Services = () => {
                         className="text-white"
                       />
                     </div>
-                    <h3 className="text-lg font-bold text-purple-900 mb-2">
+                    <h3 className="text-lg font-bold text-purple-950 mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-purple-700 text-sm">
+                    <p className="text-purple-800 text-sm">
                       {item.description}
                     </p>
                   </CardContent>
@@ -260,7 +260,7 @@ const Services = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-r from-purple-600 to-purple-800">
+        <section className="py-20 bg-gradient-to-r from-purple-800 to-purple-950">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
               Готовы заказать мероприятие?

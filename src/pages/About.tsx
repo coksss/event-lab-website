@@ -41,11 +41,11 @@ const About = () => {
 
       <div className="pt-16">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-purple-900 via-purple-700 to-purple-500">
+        <section className="py-20 bg-gradient-to-br from-purple-950 via-purple-900 to-purple-700">
           <div className="container mx-auto px-4 text-center text-white">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-5xl md:text-6xl font-bold font-montserrat mb-6">
-                О EventyLab
+                О EVENTYLAB
               </h1>
               <p className="text-xl text-purple-200">
                 История команды, которая объединяет людей через игры и веселье
@@ -55,29 +55,29 @@ const About = () => {
         </section>
 
         {/* Our Story */}
-        <section className="py-20 bg-gradient-to-br from-white via-purple-50 to-purple-100">
+        <section className="py-20 bg-gradient-to-br from-white via-purple-100 to-purple-200">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6 text-purple-900">
+                <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6 text-purple-950">
                   Наша история
                 </h2>
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
                 <div className="space-y-6">
-                  <p className="text-lg text-purple-800 leading-relaxed">
-                    EventyLab родился из простой идеи: создать пространство, где
+                  <p className="text-lg text-purple-900 leading-relaxed">
+                    EVENTYLAB родился из простой идеи: создать пространство, где
                     люди могут отдохнуть от повседневной суеты, познакомиться с
                     новыми людьми и просто хорошо провести время.
                   </p>
-                  <p className="text-lg text-purple-800 leading-relaxed">
+                  <p className="text-lg text-purple-900 leading-relaxed">
                     Всё началось в 2021 году, когда наш основатель Анна Смирнова
                     организовала первое музыкальное лото для друзей в небольшом
                     кафе. Успех превзошел все ожидания — люди просили повторить
                     мероприятие снова и снова.
                   </p>
-                  <p className="text-lg text-purple-800 leading-relaxed">
+                  <p className="text-lg text-purple-900 leading-relaxed">
                     Сегодня мы гордимся тем, что создали сообщество из тысяч
                     людей, которые регулярно участвуют в наших мероприятиях и
                     находят новых друзей.
@@ -96,10 +96,10 @@ const About = () => {
                               className="text-white"
                             />
                           </div>
-                          <div className="text-3xl font-bold text-purple-900 mb-2">
+                          <div className="text-3xl font-bold text-purple-950 mb-2">
                             {stat.number}
                           </div>
-                          <div className="text-sm text-purple-700">
+                          <div className="text-sm text-purple-800">
                             {stat.label}
                           </div>
                         </div>
@@ -113,13 +113,13 @@ const About = () => {
         </section>
 
         {/* Our Team */}
-        <section className="py-20 bg-gradient-to-br from-purple-100 to-purple-200">
+        <section className="py-20 bg-gradient-to-br from-purple-200 to-purple-300">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6 text-purple-900">
+              <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6 text-purple-950">
                 Наша команда
               </h2>
-              <p className="text-lg text-purple-700 max-w-2xl mx-auto">
+              <p className="text-lg text-purple-800 max-w-2xl mx-auto">
                 Познакомьтесь с людьми, которые создают незабываемые моменты
               </p>
             </div>
@@ -136,13 +136,13 @@ const About = () => {
                       alt={member.name}
                       className="w-24 h-24 rounded-full mx-auto mb-6 object-cover"
                     />
-                    <h3 className="text-xl font-bold text-purple-900 mb-2">
+                    <h3 className="text-xl font-bold text-purple-950 mb-2">
                       {member.name}
                     </h3>
-                    <div className="text-purple-600 font-medium mb-4">
+                    <div className="text-purple-700 font-medium mb-4">
                       {member.role}
                     </div>
-                    <p className="text-purple-700 text-sm">
+                    <p className="text-purple-800 text-sm">
                       {member.description}
                     </p>
                   </CardContent>
@@ -153,7 +153,7 @@ const About = () => {
         </section>
 
         {/* Our Mission */}
-        <section className="py-20 bg-gradient-to-r from-purple-600 to-purple-800">
+        <section className="py-20 bg-gradient-to-r from-purple-800 to-purple-950">
           <div className="container mx-auto px-4 text-center">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">

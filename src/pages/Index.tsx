@@ -34,7 +34,7 @@ const Index = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-900 via-purple-700 to-purple-500 overflow-hidden pt-20">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-950 via-purple-900 to-purple-700 overflow-hidden pt-20">
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-32 h-32 bg-purple-400/30 rounded-full blur-3xl animate-pulse"></div>
@@ -57,7 +57,7 @@ const Index = () => {
             </div>
 
             <h1 className="text-7xl md:text-9xl font-bold font-montserrat mb-8 leading-tight bg-gradient-to-r from-white via-purple-200 to-purple-100 bg-clip-text text-transparent">
-              EventyLab
+              EVENTYLAB
             </h1>
 
             <p className="text-3xl md:text-4xl font-open-sans mb-6 text-purple-100 font-semibold">
@@ -102,13 +102,13 @@ const Index = () => {
       </section>
 
       {/* Quick Events Preview */}
-      <section className="py-24 bg-gradient-to-br from-white via-purple-50 to-purple-100">
+      <section className="py-24 bg-gradient-to-br from-white via-purple-100 to-purple-200">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-5xl md:text-6xl font-bold font-montserrat mb-8 bg-gradient-purple bg-clip-text text-transparent">
               Ближайшие события
             </h2>
-            <p className="text-xl text-purple-800 max-w-3xl mx-auto">
+            <p className="text-xl text-purple-900 max-w-3xl mx-auto">
               Не упустите возможность провести время незабываемо
             </p>
           </div>
@@ -133,10 +133,10 @@ const Index = () => {
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-purple-900 mb-2">
+                  <h3 className="text-xl font-bold text-purple-950 mb-2">
                     {event.title}
                   </h3>
-                  <p className="text-purple-700 mb-4">{event.date}</p>
+                  <p className="text-purple-800 mb-4">{event.date}</p>
                   <Button className="w-full bg-gradient-purple hover:opacity-90 text-white">
                     <Icon name="Ticket" className="mr-2" />
                     Подробнее
@@ -161,7 +161,7 @@ const Index = () => {
       </section>
 
       {/* Services Preview */}
-      <section className="py-24 bg-gradient-to-br from-purple-100 via-purple-200 to-purple-300">
+      <section className="py-24 bg-gradient-to-br from-purple-200 via-purple-300 to-purple-400">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-5xl md:text-6xl font-bold font-montserrat mb-8 bg-gradient-purple bg-clip-text text-transparent">
@@ -183,10 +183,10 @@ const Index = () => {
                       className="text-white"
                     />
                   </div>
-                  <h3 className="text-2xl font-bold text-purple-900 mb-4">
+                  <h3 className="text-2xl font-bold text-purple-950 mb-4">
                     {service.title}
                   </h3>
-                  <p className="text-2xl font-bold text-purple-600 mb-6">
+                  <p className="text-2xl font-bold text-purple-700 mb-6">
                     {service.price}
                   </p>
                   <Button className="bg-gradient-purple hover:opacity-90 text-white w-full">
@@ -212,14 +212,14 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-purple-600 to-purple-800">
+      <section className="py-24 bg-gradient-to-r from-purple-800 to-purple-950">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-8">
             Готовы к приключению?
           </h2>
           <p className="text-2xl text-purple-200 mb-12 max-w-3xl mx-auto">
             Присоединяйтесь к тысячам людей, которые уже открыли для себя мир
-            EventyLab
+            EVENTYLAB
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link to="/events">

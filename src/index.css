@@ -74,6 +74,24 @@
     --border: 124 58 237;
     --input: 124 58 237;
     --ring: 192 132 252;
+    --gradient-purple: linear-gradient(
+      135deg,
+      #6d28d9 0%,
+      #5b21b6 50%,
+      #4c1d95 100%
+    );
+    --gradient-purple-light: linear-gradient(
+      135deg,
+      #9265ff 0%,
+      #7c3aed 50%,
+      #6d28d9 100%
+    );
+    --gradient-purple-dark: linear-gradient(
+      135deg,
+      #4c1d95 0%,
+      #3c1361 50%,
+      #2e0c4a 100%
+    );
   }
 }
 

@@ -100,11 +100,11 @@ const Team = () => {
 
       <div className="pt-16">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-purple-800 via-purple-600 to-purple-400 relative overflow-hidden">
+        <section className="py-20 bg-gradient-to-br from-purple-950 via-purple-800 to-purple-600 relative overflow-hidden">
           <div className="container mx-auto px-4 text-center text-white relative z-10">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-5xl md:text-6xl font-bold font-montserrat mb-6 animate-fade-in">
-                Команда EventyLab 🐱
+                Команда EVENTYLAB 🐱
               </h1>
               <p className="text-xl text-purple-100 mb-8">
                 Познакомьтесь с самыми талантливыми котами в индустрии
@@ -164,7 +164,7 @@ const Team = () => {
         </section>
 
         {/* Team Grid */}
-        <section className="py-20 bg-gradient-to-br from-purple-50 via-purple-100 to-purple-200">
+        <section className="py-20 bg-gradient-to-br from-purple-100 via-purple-200 to-purple-300">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
               {teamCats.map((cat, index) => (
@@ -200,15 +200,15 @@ const Team = () => {
                       )}
                     </div>
 
-                    <h3 className="text-2xl font-bold text-purple-900 mb-2 group-hover:text-cyan-700 transition-colors">
+                    <h3 className="text-2xl font-bold text-purple-950 mb-2 group-hover:text-cyan-700 transition-colors">
                       {cat.name}
                     </h3>
 
-                    <div className="text-purple-600 font-medium mb-4 text-lg">
+                    <div className="text-purple-700 font-medium mb-4 text-lg">
                       {cat.role}
                     </div>
 
-                    <p className="text-purple-700 text-sm mb-6 leading-relaxed">
+                    <p className="text-purple-800 text-sm mb-6 leading-relaxed">
                       {cat.description}
                     </p>
 
@@ -226,7 +226,7 @@ const Team = () => {
                     )}
 
                     <div className="space-y-4 mt-4">
-                      <div className="flex items-center justify-center text-purple-600">
+                      <div className="flex items-center justify-center text-purple-700">
                         <Icon name="Clock" size={16} className="mr-2" />
                         <span className="text-sm">Опыт: {cat.experience}</span>
                       </div>
@@ -250,7 +250,7 @@ const Team = () => {
         </section>
 
         {/* Fun Facts */}
-        <section className="py-20 bg-gradient-to-r from-purple-600 via-purple-500 to-purple-400">
+        <section className="py-20 bg-gradient-to-r from-purple-800 via-purple-700 to-purple-600">
           <div className="container mx-auto px-4 text-center">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-12">

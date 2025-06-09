@@ -87,7 +87,7 @@ const Reviews = () => {
 
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="py-24 bg-gradient-to-br from-purple-900 via-purple-700 to-purple-500">
+        <section className="py-24 bg-gradient-to-br from-purple-950 via-purple-900 to-purple-700">
           <div className="container mx-auto px-4 text-center text-white">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-6xl md:text-7xl font-bold font-montserrat mb-8">
@@ -105,7 +105,7 @@ const Reviews = () => {
         </section>
 
         {/* Stats Section */}
-        <section className="py-20 bg-gradient-to-br from-white via-purple-50 to-purple-100">
+        <section className="py-20 bg-gradient-to-br from-white via-purple-100 to-purple-200">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               {stats.map((stat, index) => (
@@ -117,10 +117,10 @@ const Reviews = () => {
                       className="text-white"
                     />
                   </div>
-                  <div className="text-3xl md:text-4xl font-bold text-purple-900 mb-2">
+                  <div className="text-3xl md:text-4xl font-bold text-purple-950 mb-2">
                     {stat.number}
                   </div>
-                  <div className="text-purple-700">{stat.label}</div>
+                  <div className="text-purple-800">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -128,13 +128,13 @@ const Reviews = () => {
         </section>
 
         {/* Reviews Grid */}
-        <section className="py-20 bg-gradient-to-br from-purple-50 to-white">
+        <section className="py-20 bg-gradient-to-br from-purple-100 to-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6 bg-gradient-purple bg-clip-text text-transparent">
                 Что говорят наши клиенты
               </h2>
-              <p className="text-xl text-purple-800 max-w-3xl mx-auto">
+              <p className="text-xl text-purple-900 max-w-3xl mx-auto">
                 Каждый отзыв - это история счастья и незабываемых эмоций
               </p>
             </div>
@@ -143,7 +143,7 @@ const Reviews = () => {
               {reviews.map((review, index) => (
                 <Card
                   key={review.id}
-                  className="bg-white/80 backdrop-blur-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 animate-fade-in border-2 border-purple-200 hover:border-purple-400"
+                  className="bg-white/80 backdrop-blur-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 animate-fade-in border-2 border-purple-300 hover:border-purple-500"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardContent className="p-8">
@@ -158,11 +158,11 @@ const Reviews = () => {
                         </AvatarFallback>
                       </Avatar>
                       <div>
-                        <h4 className="font-bold text-purple-900 text-lg">
+                        <h4 className="font-bold text-purple-950 text-lg">
                           {review.name}
                         </h4>
-                        <p className="text-purple-600">{review.role}</p>
-                        <p className="text-purple-500 text-sm">{review.date}</p>
+                        <p className="text-purple-700">{review.role}</p>
+                        <p className="text-purple-600 text-sm">{review.date}</p>
                       </div>
                     </div>
 
@@ -177,7 +177,7 @@ const Reviews = () => {
                       ))}
                     </div>
 
-                    <p className="text-purple-800 leading-relaxed mb-6 text-lg">
+                    <p className="text-purple-900 leading-relaxed mb-6 text-lg">
                       "{review.text}"
                     </p>
 
@@ -192,19 +192,19 @@ const Reviews = () => {
         </section>
 
         {/* Testimonial Video Section */}
-        <section className="py-20 bg-gradient-to-br from-purple-100 to-purple-200">
+        <section className="py-20 bg-gradient-to-br from-purple-200 to-purple-300">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6 text-purple-900">
+              <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6 text-purple-950">
                 Видеоотзывы
               </h2>
-              <p className="text-xl text-purple-700 max-w-2xl mx-auto">
+              <p className="text-xl text-purple-800 max-w-2xl mx-auto">
                 Посмотрите, как проходят наши мероприятия глазами участников
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <Card className="bg-white/80 backdrop-blur-sm border-2 border-purple-200 overflow-hidden">
+              <Card className="bg-white/80 backdrop-blur-sm border-2 border-purple-300 overflow-hidden">
                 <div className="relative h-64 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
                   <div className="text-center text-white">
                     <Icon name="Play" size={64} className="mx-auto mb-4" />
@@ -215,16 +215,16 @@ const Reviews = () => {
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="font-bold text-purple-900 mb-2">
+                  <h3 className="font-bold text-purple-950 mb-2">
                     Музыкальное лото для команды
                   </h3>
-                  <p className="text-purple-700">
+                  <p className="text-purple-800">
                     Отзыв HR-менеджера о корпоративном мероприятии
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="bg-white/80 backdrop-blur-sm border-2 border-purple-200 overflow-hidden">
+              <Card className="bg-white/80 backdrop-blur-sm border-2 border-purple-300 overflow-hidden">
                 <div className="relative h-64 bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center">
                   <div className="text-center text-white">
                     <Icon name="Play" size={64} className="mx-auto mb-4" />
@@ -248,7 +248,7 @@ const Reviews = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-r from-purple-600 to-purple-800">
+        <section className="py-20 bg-gradient-to-r from-purple-800 to-purple-950">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
               Хотите оставить свой отзыв?
