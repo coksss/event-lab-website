@@ -128,7 +128,7 @@ const Events = () => {
                     <p className="text-purple-800 mb-4">{event.description}</p>
 
                     <div className="space-y-2 mb-6">
-                      <div className="flex items-center text-purple-700">
+                      <div className="flex items-center text-purple-700 bg-[#012]">
                         <Icon name="Calendar" size={16} className="mr-2" />
                         <span>
                           {event.date} в {event.time}

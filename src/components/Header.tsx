@@ -29,7 +29,7 @@ const Header = () => {
               <Icon name="Sparkles" size={28} className="text-white" />
             </div>
             <h1 className="text-2xl font-bold font-montserrat bg-gradient-purple bg-clip-text text-transparent">
-              EventyLab
+              EVENTYLAB
             </h1>
           </Link>
 
@@ -41,7 +41,7 @@ const Header = () => {
                 className={`px-6 py-3 rounded-xl font-medium transition-all duration-300 relative overflow-hidden group ${
                   isActive(item.path)
                     ? "bg-gradient-purple text-white shadow-lg"
-                    : "text-purple-700 hover:text-purple-900 hover:bg-purple-50"
+                    : "text-purple-800 hover:text-purple-950 hover:bg-purple-100"
                 }`}
               >
                 <span className="relative z-10">{item.label}</span>
@@ -60,13 +60,13 @@ const Header = () => {
           </div>
 
           <button
-            className="lg:hidden p-2 rounded-xl bg-purple-50 hover:bg-purple-100 transition-colors"
+            className="lg:hidden p-2 rounded-xl bg-purple-100 hover:bg-purple-200 transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <Icon
               name={isMenuOpen ? "X" : "Menu"}
               size={24}
-              className="text-purple-700"
+              className="text-purple-800"
             />
           </button>
         </div>
@@ -82,7 +82,7 @@ const Header = () => {
                   className={`px-4 py-3 rounded-xl font-medium transition-all duration-300 ${
                     isActive(item.path)
                       ? "bg-gradient-purple text-white"
-                      : "text-purple-700 hover:bg-purple-50"
+                      : "text-purple-800 hover:bg-purple-100"
                   }`}
                 >
                   {item.label}
