@@ -6,7 +6,7 @@ export default {
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}"
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -74,6 +74,12 @@ export default {
           "linear-gradient(135deg, #9b87f5 0%, #7E69AB 50%, #6E59A5 100%)",
         "gradient-purple-light":
           "linear-gradient(135deg, #D6BCFA 0%, #9b87f5 100%)",
+        "gradient-purple":
+          "linear-gradient(135deg, #8B5CF6, #A855F7, #C084FC, #DDD6FE)",
+        "gradient-bright":
+          "linear-gradient(135deg, #7C3AED, #8B5CF6, #A855F7, #C084FC)",
+        "gradient-vivid":
+          "linear-gradient(135deg, #6D28D9, #7C3AED, #8B5CF6, #A855F7)",
       },
       borderRadius: {
         lg: "var(--radius)",

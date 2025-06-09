@@ -12,6 +12,7 @@ const Header = () => {
     { path: "/events", label: "Афиша" },
     { path: "/services", label: "Услуги" },
     { path: "/gallery", label: "Галерея" },
+    { path: "/team", label: "Команда" },
     { path: "/reviews", label: "Отзывы" },
     { path: "/about", label: "О нас" },
   ];
