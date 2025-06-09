@@ -91,7 +91,7 @@ const ReviewsSection = () => {
                       key={i}
                       name="Star"
                       size={16}
-                      className="text-yellow-400 fill-current"
+                      className="text-cyan-400 fill-current"
                     />
                   ))}
                 </div>
@@ -110,7 +110,7 @@ const ReviewsSection = () => {
 
         <div className="text-center mt-12">
           <div className="inline-flex items-center px-6 py-3 bg-gradient-purple rounded-full text-white font-semibold">
-            <Icon name="Star" size={20} className="mr-2 text-yellow-300" />
+            <Icon name="Star" size={20} className="mr-2 text-cyan-300" />
             4.9/5 средняя оценка наших мероприятий
           </div>
         </div>
