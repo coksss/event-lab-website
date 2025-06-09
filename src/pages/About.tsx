@@ -55,8 +55,17 @@ const About = () => {
         </section>
 
         {/* Our Story */}
-        <section className="py-20 bg-gradient-to-br from-white via-purple-50 to-purple-100">
-          <div className="container mx-auto px-4">
+        <section className="py-20 bg-gradient-purple-dark-blue relative overflow-hidden">
+          {/* Animated Background Elements */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-20 left-10 w-32 h-32 bg-purple-400/30 rounded-full blur-3xl animate-pulse"></div>
+            <div
+              className="absolute bottom-20 right-10 w-48 h-48 bg-purple-300/20 rounded-full blur-3xl animate-pulse"
+              style={{ animationDelay: "1s" }}
+            ></div>
+          </div>
+
+          <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6 text-purple-900">
@@ -113,8 +122,13 @@ const About = () => {
         </section>
 
         {/* Our Team */}
-        <section className="py-20 bg-gradient-to-br from-purple-100 to-purple-200">
-          <div className="container mx-auto px-4">
+        <section className="py-20 bg-gradient-purple-dark-blue relative overflow-hidden">
+          {/* Animated Background Elements */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-40 left-30 w-36 h-36 bg-purple-400/25 rounded-full blur-3xl animate-pulse"></div>
+          </div>
+
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6 text-purple-900">
                 Наша команда

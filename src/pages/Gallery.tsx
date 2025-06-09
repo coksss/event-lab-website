@@ -118,8 +118,13 @@ const Gallery = () => {
         </section>
 
         {/* Filter Section */}
-        <section className="py-12 bg-gradient-to-br from-white via-purple-50 to-purple-100">
-          <div className="container mx-auto px-4">
+        <section className="py-12 bg-gradient-purple-dark-blue relative overflow-hidden">
+          {/* Animated Background Elements */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-10 left-20 w-40 h-40 bg-purple-400/20 rounded-full blur-3xl animate-pulse"></div>
+          </div>
+
+          <div className="container mx-auto px-4 relative z-10">
             <div className="flex flex-wrap justify-center gap-4 mb-12">
               {categories.map((category) => (
                 <Button
@@ -145,8 +150,21 @@ const Gallery = () => {
         </section>
 
         {/* Gallery Grid */}
-        <section className="py-12 bg-gradient-to-br from-purple-50 to-white">
-          <div className="container mx-auto px-4">
+        <section className="py-12 bg-gradient-purple-dark-blue relative overflow-hidden">
+          {/* Animated Background Elements */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-20 left-10 w-32 h-32 bg-purple-400/30 rounded-full blur-3xl animate-pulse"></div>
+            <div
+              className="absolute bottom-20 right-10 w-48 h-48 bg-purple-300/20 rounded-full blur-3xl animate-pulse"
+              style={{ animationDelay: "1s" }}
+            ></div>
+            <div
+              className="absolute top-1/2 left-1/2 w-64 h-64 bg-purple-200/10 rounded-full blur-3xl animate-pulse"
+              style={{ animationDelay: "2s" }}
+            ></div>
+          </div>
+
+          <div className="container mx-auto px-4 relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
               {filteredItems.map((item, index) => (
                 <Card

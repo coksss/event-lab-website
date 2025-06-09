@@ -105,8 +105,13 @@ const Reviews = () => {
         </section>
 
         {/* Stats Section */}
-        <section className="py-20 bg-gradient-to-br from-white via-purple-50 to-purple-100">
-          <div className="container mx-auto px-4">
+        <section className="py-20 bg-gradient-purple-dark-blue relative overflow-hidden">
+          {/* Animated Background Elements */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-20 left-10 w-32 h-32 bg-purple-400/30 rounded-full blur-3xl animate-pulse"></div>
+          </div>
+
+          <div className="container mx-auto px-4 relative z-10">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
@@ -128,8 +133,17 @@ const Reviews = () => {
         </section>
 
         {/* Reviews Grid */}
-        <section className="py-20 bg-gradient-to-br from-purple-50 to-white">
-          <div className="container mx-auto px-4">
+        <section className="py-20 bg-gradient-purple-dark-blue relative overflow-hidden">
+          {/* Animated Background Elements */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-40 left-30 w-36 h-36 bg-purple-400/25 rounded-full blur-3xl animate-pulse"></div>
+            <div
+              className="absolute bottom-30 right-40 w-52 h-52 bg-purple-300/15 rounded-full blur-3xl animate-pulse"
+              style={{ animationDelay: "1.5s" }}
+            ></div>
+          </div>
+
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6 bg-gradient-purple bg-clip-text text-transparent">
                 Что говорят наши клиенты
@@ -192,8 +206,13 @@ const Reviews = () => {
         </section>
 
         {/* Testimonial Video Section */}
-        <section className="py-20 bg-gradient-to-br from-purple-100 to-purple-200">
-          <div className="container mx-auto px-4">
+        <section className="py-20 bg-gradient-purple-dark-blue relative overflow-hidden">
+          {/* Animated Background Elements */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-10 left-40 w-44 h-44 bg-purple-400/20 rounded-full blur-3xl animate-pulse"></div>
+          </div>
+
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6 text-purple-900">
                 Видеоотзывы

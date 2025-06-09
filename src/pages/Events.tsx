@@ -92,8 +92,17 @@ const Events = () => {
         </section>
 
         {/* Events Grid */}
-        <section className="py-20 bg-gradient-to-br from-purple-50 to-white">
-          <div className="container mx-auto px-4">
+        <section className="py-20 bg-gradient-purple-dark-blue relative overflow-hidden">
+          {/* Animated Background Elements */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-20 left-10 w-32 h-32 bg-purple-400/30 rounded-full blur-3xl animate-pulse"></div>
+            <div
+              className="absolute bottom-20 right-10 w-48 h-48 bg-purple-300/20 rounded-full blur-3xl animate-pulse"
+              style={{ animationDelay: "1s" }}
+            ></div>
+          </div>
+
+          <div className="container mx-auto px-4 relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {events.map((event) => (
                 <Card

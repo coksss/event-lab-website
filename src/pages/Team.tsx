@@ -100,7 +100,20 @@ const Team = () => {
 
       <div className="pt-16">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-purple-800 via-purple-600 to-purple-400 relative overflow-hidden">
+        <section className="py-20 bg-gradient-purple-dark-blue relative overflow-hidden">
+          {/* Animated Background Elements */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-20 left-10 w-32 h-32 bg-purple-400/30 rounded-full blur-3xl animate-pulse"></div>
+            <div
+              className="absolute bottom-20 right-10 w-48 h-48 bg-purple-300/20 rounded-full blur-3xl animate-pulse"
+              style={{ animationDelay: "1s" }}
+            ></div>
+            <div
+              className="absolute top-1/2 left-1/2 w-64 h-64 bg-purple-200/10 rounded-full blur-3xl animate-pulse"
+              style={{ animationDelay: "2s" }}
+            ></div>
+          </div>
+
           <div className="container mx-auto px-4 text-center text-white relative z-10">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-5xl md:text-6xl font-bold font-montserrat mb-6 animate-fade-in">
@@ -164,8 +177,17 @@ const Team = () => {
         </section>
 
         {/* Team Grid */}
-        <section className="py-20 bg-gradient-to-br from-purple-50 via-purple-100 to-purple-200">
-          <div className="container mx-auto px-4">
+        <section className="py-20 bg-gradient-purple-dark-blue relative overflow-hidden">
+          {/* Animated Background Elements */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-10 left-20 w-40 h-40 bg-purple-400/20 rounded-full blur-3xl animate-pulse"></div>
+            <div
+              className="absolute bottom-40 right-20 w-56 h-56 bg-purple-300/15 rounded-full blur-3xl animate-pulse"
+              style={{ animationDelay: "0.5s" }}
+            ></div>
+          </div>
+
+          <div className="container mx-auto px-4 relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
               {teamCats.map((cat, index) => (
                 <Card
