@@ -75,7 +75,7 @@ const Events = () => {
 
       <div className="pt-16">
         {/* Hero Section */}
-        <section className="py-20 from-purple-900 via-purple-700 to-purple-500 bg-[#740e89ab]">
+        <section className="py-20 from-purple-900 via-purple-700 to-purple-500 bg-[#9207dc]">
           <div className="container mx-auto px-4 text-center text-white">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-5xl md:text-6xl font-bold font-montserrat mb-6">
