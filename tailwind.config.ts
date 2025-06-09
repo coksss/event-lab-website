@@ -53,16 +53,16 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         purple: {
-          50: "#faf5ff",
-          100: "#f3e8ff",
-          200: "#e9d5ff",
-          300: "#d8b4fe",
-          400: "#c084fc",
-          500: "#9b87f5",
-          600: "#7E69AB",
-          700: "#6E59A5",
+          50: "#f3e8ff",
+          100: "#e9d5ff",
+          200: "#d8b4fe",
+          300: "#c084fc",
+          400: "#a855f7",
+          500: "#8b5cf6",
+          600: "#7c3aed",
+          700: "#6d28d9",
           800: "#5b21b6",
-          900: "#1A1F2C",
+          900: "#4c1d95",
         },
       },
       fontFamily: {
@@ -71,15 +71,13 @@ export default {
       },
       backgroundImage: {
         "gradient-purple":
-          "linear-gradient(135deg, #9b87f5 0%, #7E69AB 50%, #6E59A5 100%)",
+          "linear-gradient(135deg, #8b5cf6 0%, #7c3aed 50%, #6d28d9 100%)",
         "gradient-purple-light":
-          "linear-gradient(135deg, #D6BCFA 0%, #9b87f5 100%)",
-        "gradient-purple":
-          "linear-gradient(135deg, #8B5CF6, #A855F7, #C084FC, #DDD6FE)",
+          "linear-gradient(135deg, #c084fc 0%, #8b5cf6 100%)",
         "gradient-bright":
-          "linear-gradient(135deg, #7C3AED, #8B5CF6, #A855F7, #C084FC)",
+          "linear-gradient(135deg, #6d28d9, #7c3aed, #8b5cf6, #a855f7)",
         "gradient-vivid":
-          "linear-gradient(135deg, #6D28D9, #7C3AED, #8B5CF6, #A855F7)",
+          "linear-gradient(135deg, #5b21b6, #6d28d9, #7c3aed, #8b5cf6)",
       },
       borderRadius: {
         lg: "var(--radius)",
