@@ -95,33 +95,12 @@ const Team = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-purple-dark-blue relative overflow-hidden">
+    <div className="min-h-screen">
       <Header />
 
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-purple-400/30 rounded-full blur-3xl animate-pulse"></div>
-        <div
-          className="absolute bottom-20 right-10 w-48 h-48 bg-purple-300/20 rounded-full blur-3xl animate-pulse"
-          style={{ animationDelay: "1s" }}
-        ></div>
-        <div
-          className="absolute top-1/2 left-1/2 w-64 h-64 bg-purple-200/10 rounded-full blur-3xl animate-pulse"
-          style={{ animationDelay: "2s" }}
-        ></div>
-      </div>
-
-      {/* Background Music */}
-      <audio ref={audioRef} loop>
-        <source
-          src="https://www.soundjay.com/misc/sounds/cat-meow-14.wav"
-          type="audio/wav"
-        />
-      </audio>
-
-      <div className="pt-20 relative z-10">
+      <div className="pt-16">
         {/* Hero Section */}
-        <section className="py-20 relative overflow-hidden">
+        <section className="py-20 bg-gradient-to-br from-purple-800 via-purple-600 to-purple-400 relative overflow-hidden">
           <div className="container mx-auto px-4 text-center text-white relative z-10">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-5xl md:text-6xl font-bold font-montserrat mb-6 animate-fade-in">
@@ -185,17 +164,8 @@ const Team = () => {
         </section>
 
         {/* Team Grid */}
-        <section className="py-20 bg-gradient-purple-dark-blue relative overflow-hidden">
-          {/* Animated Background Elements */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-10 left-20 w-40 h-40 bg-purple-400/20 rounded-full blur-3xl animate-pulse"></div>
-            <div
-              className="absolute bottom-40 right-20 w-56 h-56 bg-purple-300/15 rounded-full blur-3xl animate-pulse"
-              style={{ animationDelay: "0.5s" }}
-            ></div>
-          </div>
-
-          <div className="container mx-auto px-4 relative z-10">
+        <section className="py-20 bg-gradient-to-br from-purple-50 via-purple-100 to-purple-200">
+          <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
               {teamCats.map((cat, index) => (
                 <Card
@@ -214,9 +184,9 @@ const Team = () => {
                       <img
                         src={cat.image}
                         alt={cat.name}
-                        className={`w-32 h-32 rounded-full mx-auto object-cover border-4 border-purple-200 group-hover:border-purple-400 transition-all duration-300 ${
+                        className={`w-32 h-32 rounded-full mx-auto object-cover border-4 border-purple-200 group-hover:border-cyan-400 transition-all duration-300 ${
                           selectedCat === index
-                            ? "scale-110 border-purple-400"
+                            ? "scale-110 border-cyan-400"
                             : ""
                         }`}
                       />
@@ -230,7 +200,7 @@ const Team = () => {
                       )}
                     </div>
 
-                    <h3 className="text-2xl font-bold text-purple-900 mb-2 group-hover:text-purple-700 transition-colors">
+                    <h3 className="text-2xl font-bold text-purple-900 mb-2 group-hover:text-cyan-700 transition-colors">
                       {cat.name}
                     </h3>
 
@@ -245,10 +215,10 @@ const Team = () => {
                     {selectedCat === index && (
                       <div className="space-y-4 animate-fade-in">
                         <div className="bg-gradient-to-r from-cyan-50 to-blue-50 rounded-xl p-4">
-                          <p className="text-purple-700 font-medium text-sm mb-2">
+                          <p className="text-cyan-700 font-medium text-sm mb-2">
                             💭 Девиз: "{cat.motto}"
                           </p>
-                          <p className="text-purple-600 text-sm">
+                          <p className="text-cyan-600 text-sm">
                             🎵 Любимая музыка: {cat.favoriteMusic}
                           </p>
                         </div>
@@ -265,7 +235,7 @@ const Team = () => {
                         {cat.skills.map((skill, skillIndex) => (
                           <span
                             key={skillIndex}
-                            className="px-3 py-1 bg-gradient-to-r from-purple-500 to-purple-600 text-white text-xs rounded-full shadow-md hover:shadow-lg transition-shadow"
+                            className="px-3 py-1 bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-xs rounded-full shadow-md hover:shadow-lg transition-shadow"
                           >
                             {skill}
                           </span>
@@ -292,7 +262,7 @@ const Team = () => {
                   <Icon
                     name="Fish"
                     size={48}
-                    className="text-purple-300 mx-auto mb-4"
+                    className="text-cyan-300 mx-auto mb-4"
                   />
                   <h3 className="text-xl font-bold text-white mb-2">
                     Любимая еда
@@ -306,7 +276,7 @@ const Team = () => {
                   <Icon
                     name="Moon"
                     size={48}
-                    className="text-purple-300 mx-auto mb-4"
+                    className="text-cyan-300 mx-auto mb-4"
                   />
                   <h3 className="text-xl font-bold text-white mb-2">
                     Режим работы
@@ -320,7 +290,7 @@ const Team = () => {
                   <Icon
                     name="Trophy"
                     size={48}
-                    className="text-purple-300 mx-auto mb-4"
+                    className="text-cyan-300 mx-auto mb-4"
                   />
                   <h3 className="text-xl font-bold text-white mb-2">
                     Достижения
@@ -340,7 +310,7 @@ const Team = () => {
             <p className="text-white text-lg mb-4">
               🎉 Наши коты готовы сделать ваш праздник незабываемым!
             </p>
-            <Button className="bg-white text-purple-600 hover:bg-purple-50 font-bold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+            <Button className="bg-white text-cyan-600 hover:bg-cyan-50 font-bold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
               <Icon name="Phone" className="mr-2" size={18} />
               Связаться с командой
             </Button>

@@ -53,40 +53,28 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         purple: {
-          50: "#f8fafc",
-          100: "#f1f5f9",
-          200: "#e2e8f0",
-          300: "#cbd5e1",
-          400: "#94a3b8",
-          500: "#64748b",
-          600: "#475569",
-          700: "#334155",
-          800: "#1e293b",
-          900: "#0f172a",
+          50: "#f3e8ff",
+          100: "#e9d5ff",
+          200: "#d8b4fe",
+          300: "#c084fc",
+          400: "#a855f7",
+          500: "#8b5cf6",
+          600: "#7c3aed",
+          700: "#6d28d9",
+          800: "#5b21b6",
+          900: "#4c1d95",
         },
-        darkblue: {
-          50: "#f8fafc",
-          100: "#f1f5f9",
-          200: "#e2e8f0",
-          300: "#cbd5e1",
-          400: "#94a3b8",
-          500: "#64748b",
-          600: "#475569",
-          700: "#334155",
-          800: "#1e293b",
-          900: "#0f172a",
-        },
-        indigo: {
-          50: "#eef2ff",
-          100: "#e0e7ff",
-          200: "#c7d2fe",
-          300: "#a5b4fc",
-          400: "#818cf8",
-          500: "#6366f1",
-          600: "#4f46e5",
-          700: "#4338ca",
-          800: "#3730a3",
-          900: "#312e81",
+        cyan: {
+          50: "#ecfeff",
+          100: "#cffafe",
+          200: "#a5f3fc",
+          300: "#67e8f9",
+          400: "#22d3ee",
+          500: "#06b6d4",
+          600: "#0891b2",
+          700: "#0e7490",
+          800: "#155e75",
+          900: "#164e63",
         },
       },
       fontFamily: {
@@ -94,14 +82,16 @@ export default {
         "open-sans": ["Open Sans", "sans-serif"],
       },
       backgroundImage: {
-        "gradient-purple-dark-blue":
-          "linear-gradient(135deg, #9333ea 0%, #7c2d92 25%, #6a1b7b 50%, #581c64 75%, #3b0e47 100%)",
-        "gradient-purple-dark-blue-light":
-          "linear-gradient(135deg, #a855f7 0%, #9333ea 25%, #7c2d92 50%, #6a1b7b 75%, #581c64 100%)",
-        "gradient-dark-blue":
-          "linear-gradient(135deg, #581c64 0%, #3b0e47 50%, #2d0a37 100%)",
-        "gradient-purple-indigo":
-          "linear-gradient(135deg, #9333ea 0%, #7c2d92 100%)",
+        "gradient-purple":
+          "linear-gradient(135deg, #8b5cf6 0%, #7c3aed 50%, #6d28d9 100%)",
+        "gradient-purple-light":
+          "linear-gradient(135deg, #c084fc 0%, #8b5cf6 100%)",
+        "gradient-bright":
+          "linear-gradient(135deg, #06b6d4, #0891b2, #22d3ee, #67e8f9)",
+        "gradient-vivid":
+          "linear-gradient(135deg, #5b21b6, #6d28d9, #7c3aed, #8b5cf6)",
+        "gradient-cyan":
+          "linear-gradient(135deg, #06b6d4 0%, #0891b2 50%, #0e7490 100%)",
       },
       borderRadius: {
         lg: "var(--radius)",
