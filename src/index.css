@@ -15,7 +15,7 @@
     --popover: 255 253 251;
     --popover-foreground: 15 23 42;
 
-    --primary: 79 70 229;
+    --primary: 121 40 202;
     --primary-foreground: 255 253 251;
 
     --secondary: 30 41 59;
@@ -24,7 +24,7 @@
     --muted: 241 245 249;
     --muted-foreground: 71 85 105;
 
-    --accent: 99 102 241;
+    --accent: 147 51 234;
     --accent-foreground: 255 253 251;
 
     --destructive: 239 68 68;
@@ -38,13 +38,13 @@
 
     --purple-dark-blue-gradient: linear-gradient(
       135deg,
-      #8b5cf6 0%,
-      #7c3aed 25%,
-      #6d28d9 50%,
-      #5b21b6 75%,
-      #4c1d95 100%
+      #9333ea 0%,
+      #7c2d92 25%,
+      #6a1b7b 50%,
+      #581c64 75%,
+      #3b0e47 100%
     );
-    --purple-light: 99 102 241;
+    --purple-light: 147 51 234;
     --dark-blue: 15 23 42;
   }
 
@@ -58,24 +58,24 @@
     --popover: 30 41 59;
     --popover-foreground: 255 253 251;
 
-    --primary: 99 102 241;
+    --primary: 147 51 234;
     --primary-foreground: 15 23 42;
 
-    --secondary: 79 70 229;
+    --secondary: 121 40 202;
     --secondary-foreground: 255 253 251;
 
     --muted: 30 41 59;
     --muted-foreground: 148 163 184;
 
-    --accent: 79 70 229;
+    --accent: 139 92 246;
     --accent-foreground: 255 253 251;
 
     --destructive: 239 68 68;
     --destructive-foreground: 255 253 251;
 
-    --border: 79 70 229;
-    --input: 79 70 229;
-    --ring: 99 102 241;
+    --border: 121 40 202;
+    --input: 121 40 202;
+    --ring: 147 51 234;
   }
 }
 
@@ -104,22 +104,22 @@
   .gradient-purple-dark-blue {
     background: linear-gradient(
       135deg,
-      #8b5cf6 0%,
-      #6366f1 25%,
-      #4f46e5 50%,
-      #1e293b 75%,
-      #0f172a 100%
+      #9333ea 0%,
+      #7c2d92 25%,
+      #6a1b7b 50%,
+      #581c64 75%,
+      #3b0e47 100%
     );
   }
 
   .gradient-purple-dark-blue-light {
     background: linear-gradient(
       135deg,
-      #a78bfa 0%,
-      #818cf8 25%,
-      #6366f1 50%,
-      #475569 75%,
-      #334155 100%
+      #a855f7 0%,
+      #9333ea 25%,
+      #7c2d92 50%,
+      #6a1b7b 75%,
+      #581c64 100%
     );
   }
 }

@@ -95,13 +95,13 @@ export default {
       },
       backgroundImage: {
         "gradient-purple-dark-blue":
-          "linear-gradient(135deg, #8b5cf6 0%, #7c3aed 25%, #6d28d9 50%, #5b21b6 75%, #4c1d95 100%)",
+          "linear-gradient(135deg, #9333ea 0%, #7c2d92 25%, #6a1b7b 50%, #581c64 75%, #3b0e47 100%)",
         "gradient-purple-dark-blue-light":
-          "linear-gradient(135deg, #a78bfa 0%, #8b5cf6 25%, #7c3aed 50%, #6d28d9 75%, #5b21b6 100%)",
+          "linear-gradient(135deg, #a855f7 0%, #9333ea 25%, #7c2d92 50%, #6a1b7b 75%, #581c64 100%)",
         "gradient-dark-blue":
-          "linear-gradient(135deg, #5b21b6 0%, #4c1d95 50%, #3b0764 100%)",
+          "linear-gradient(135deg, #581c64 0%, #3b0e47 50%, #2d0a37 100%)",
         "gradient-purple-indigo":
-          "linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)",
+          "linear-gradient(135deg, #9333ea 0%, #7c2d92 100%)",
       },
       borderRadius: {
         lg: "var(--radius)",
